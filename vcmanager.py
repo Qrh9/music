@@ -44,7 +44,7 @@ async def start_vc(event):
         await Qrh9(
             functions.phone.CreateGroupCallRequest(
                 peer=vc_chat,
-                title="الساحر 🤡",
+                title="الساحر ✨",
             )
         )
         await edit_delete(event, "**- تم بنجاح تشغيل المكالمة الصوتية**")
