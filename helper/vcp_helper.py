@@ -19,7 +19,7 @@ from yt_dlp import YoutubeDL
 from .stream_helper import Stream, check_url, video_dl, yt_regex
 
 
-class alsaherVC:
+class music:
     def __init__(self, client) -> None:
         self.app = PyTgCalls(client, overload_quiet_mode=True)
         self.client = client
@@ -56,7 +56,7 @@ class alsaherVC:
         try:
             await self.app.join_group_call(
                 chat_id=chat.id,
-                stream=AudioPiped("alsaherVC/resources/Silence01s.mp3"),
+                stream=AudioPiped("music/resources/Silence01s.mp3"),
                 join_as=join_as_chat,
                 stream_type=StreamType().pulse_stream,
             )
@@ -152,7 +152,7 @@ class alsaherVC:
             if self.PLAYING:
                 await self.app.change_stream(
                     self.CHAT_ID,
-                    AudioPiped("alsaherVC/resources/Silence01s.mp3"),
+                    AudioPiped("music/resources/Silence01s.mp3"),
                 )
             self.PLAYING = False
             return "- تم تخطي التشغيل الحالي\nقائمة التشغيل فارغة"
