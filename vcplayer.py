@@ -8,7 +8,7 @@ from SHRU.core.managers import edit_delete, edit_or_reply
 
 from .helper.stream_helper import Stream
 from .helper.tg_downloader import tg_dl
-from .helper.vcp_helper import jepthonvc
+from .helper.vcp_helper import music
 
 plugin_category = "extra"
 
@@ -26,7 +26,7 @@ else:
     vc_client = Qrh9
 
 vc_client.__class__.__module__ = "telethon.client.telegramclient"
-vc_player = jepthonvc(vc_client)
+vc_player = music(vc_client)
 
 asyncio.create_task(vc_player.start())
 
