@@ -72,7 +72,7 @@ class music:
             except ChatAdminRequiredError:
                 return "- عليك ان تكون مشرف في الدردشة اولا"
         except (NodeJSNotInstalled, TooOldNodeJSVersion):
-            return "- عليك تثبيت المتطلبات اولا شاهاد القناة الاساسية @jepthon"
+            return "- عليك تثبيت المتطلبات اولا شاهاد القناة الاساسية @SXYO3"
         except AlreadyJoinedError:
             await self.app.leave_group_call(chat.id)
             await asyncio.sleep(3)
